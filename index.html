@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music JCM</title>
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlis</h4>
+                <h4 ><span></span><i class="bi bi-music-note-beamed" id="biMusicNoteBeamed"></i>Last listening</h4>
+                <h4 ><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="imagens/1.jpg" alt="">
+                    <h5>
+                        Teus Sonhos
+                        <div class="subtitle">Fernandinho</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="imagens/2.jpg" alt="">
+                    <h5>
+                        Que ele cresça
+                        <div class="subtitle">Desconhecido</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                    
+                </li>
+
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="imagens/3.jpg" alt="">
+                    <h5>
+                        Brilharei
+                        <div class="subtitle">Juliano Son</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                    
+                </li>
+
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="imagens/4.jpg" alt="">
+                    <h5>
+                        Aba Pai
+                        <div class="subtitle">Daniel Alencar</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                    
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="imagens/5.jpg" alt="">
+                    <h5>
+                        Faz chover
+                        <div class="subtitle">Fernandinho</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                    
+                </li>
+                                
+            </div>
+        </div>
+
+        <!-- BARRA DE MENU TOP -->
+        <div class="song_side">
+            <nav class="dp-menu">
+                <ul>
+                    <li>Home <span></span></li>
+                    <li><a href="#">MY LIBRARY</a></li>
+                    <li><a href="#">MUSIC</a></li>
+                    <li><a href="#">ALL MUSICS</a>
+                       <!-- <ul>
+                            <li><a href="#">AFRICAN MUSIC</a></li>
+                            <li><a href="#">INGLES MUSIC</a></li>
+                            <li><a href="#">PORTUGUESE MUSIC</a></li>
+                        </ul>-->
+                    </li>
+                </ul>
+
+                <!-- BARRA DE PESQUISA -->
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="imagens/Perfil-JCM.jpg" alt="User" title="Email: marketingmulemele@gmail.com">
+                </div>
+            </nav>
+
+            <!-- CAMPO DE NOME DO AUTOR DE MUSICA E  2 BUTOES-->
+            <div class="content">
+                <h1>JCM Play</h1>
+                <p>
+                    Listen to the songs of praise, you will be touched by God's deep love. Enjoy the moment.
+                   <!-- <br>
+                    every time and every day, but i like it. 
+                </p>-->
+                <!-- DOIS BUTOES -->
+                <div class="buttons">
+                    <button id="masterPlay2">PLAY</button>
+                    <button><a href="#">FOLLOW</a></button>
+                </div>
+            </div>
+
+            <!-- CAMPO DE MUSICAS POPULARES  -->
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular Song</h4>
+                    <div class="btn_s">
+                        <i id='left_scroll' class="bi bi-arrow-left-short"></i>
+                        <i id='right_scroll' class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/6.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                        </div>
+                        <h5>Fernandinho
+                            <br>
+                            <div class="subtitle">Uma nova historia</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/7.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>Hillsong
+                            <br>
+                            <div class="subtitle">Gad is able</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/8.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>Daniel Alencar
+                            <br>
+                            <div class="subtitle">Impossivel Deus pode</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/9.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>Juliano Son
+                            <br>
+                            <div class="subtitle">Toma me</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/10.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>Fernandinho
+                            <br>
+                            <div class="subtitle">Emanuel</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/3.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Toque no altar
+                            <br>
+                            <div class="subtitle">Te louvarei</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="imagens/9.jpg" alt="Mul">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Gabriela Rocha
+                            <br>
+                            <div class="subtitle">Teu Santo Nome</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <!-- POPULAR ARTISTAS -->
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular Artists</h4>
+                    <div class="btn_s">
+                        <i id='left_scrolls' class="bi bi-arrow-left-short"></i>
+                        <i id='right_scrolls' class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <!--PARTE DE ITEM-->
+                <div class="item">
+                    <li>
+                        <img src="imagens/4.jpg" alt="Daniel Alencar" title="Tudo que tenho">
+                    </li>
+                    <li>
+                        <img src="imagens/1.jpg" alt="Daniel Alencar" title="Sou feliz">
+                    </li>
+                    <li>
+                        <img src="imagens/2.jpg" alt="Daniel Alencar" title="Tudo que tenho">
+                    </li>
+                    <li>
+                        <img src="imagens/6.jpg" alt="Fernandinho" title="Uma nova historia">
+                    </li>
+                    <li>
+                        <img src="imagens/5.jpg" alt="Daniel Alencar" title="Impossivel Deus pode">
+                    </li>
+                    <li>
+                        <img src="imagens/United.jpg" alt="Daniel Alencar" title="Desconhecido">
+                    </li>
+                    <li>
+                        <img src="imagens/10.jpg" alt="Daniel Alencar" title="Tudo que tenho">
+                    </li>
+                    <li>
+                        <img src="imagens/2.jpg" alt="Daniel Alencar" title="Tudo que tenho">
+                    </li>
+                    <li>
+                        <img src="imagens/3.jpg" alt="Daniel Alencar" title="Tudo que tenho">
+                    </li>
+                    <li>
+                        <img src="imagens/Adoracao peniel.jpg" alt="Daniel Alencar" title="Tudo que tenho">
+                    </li>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="master_play">
+            
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="imagens/1.jpg" alt="Fer" id="poster_master_play">
+            <h5 id="title">Teus sonhos <br>
+                <div class="subtitle">Fernandinho</div>
+            </h5>
+
+            <!-- ICON DE PLAY E PAUSE-->
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+
+            <!-- BARA DE MUSICA E OS MINUTOS -->
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+
+            <!-- VOLUME DA MUSICA -->
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+
+</header>
+    <script src="app.js"></script>
+</body>
+
+</html>
